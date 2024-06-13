@@ -1,0 +1,1 @@
+pokemonAgua1 = PokemonAgua('Squartle', )
