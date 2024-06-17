@@ -44,7 +44,10 @@ class Entrenador():
           return pokemon                 ### VER ###
      
     def __str__(self) -> str:
-        return f'Nombre del entrenador: {self.nombre}, Ciudad: {self.ciudad}, Pokemones: {self.__lista_pokemones}'
+        return f'''
+        Nombre del entrenador: {self.nombre}
+        Ciudad: {self.ciudad}
+        Pokemones: {self.__lista_pokemones}'''
 
 
 

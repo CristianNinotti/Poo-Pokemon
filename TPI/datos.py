@@ -39,10 +39,10 @@ Abra = Pokemon('Abra', 75, 3, 16, pokemonPsiquico)
 Mankey = Pokemon('Mankey', 210, 21, 16, pokemonLucha)
 Clefairy = Pokemon('Clefairy', 210, 21, 16, pokemonNormal)
 
-print(Squartle)
-print(Charmander)
+lista_pokemones = [Squartle,Charmander,Bulbasaur,Pikachu,Geodude,Caterpie,Pidgey,Jynx,Cubone,Aerodactyl,Dratini,Gastly,Abra,Mankey,Clefairy]
 
-
+## for pokemon in lista_pokemones:
+##   print(pokemon) 
 
 
 

@@ -16,7 +16,7 @@ def mostrar_menu():
 def mostrar_pokemon_disponibles():
     print("Pokémon disponibles:")
     for i, pokemon in enumerate(lista_pokemones):
-        print(f"{i + 1}. {pokemon.nombre} (Nivel: {pokemon.nivel}, Salud: {pokemon.puntos_salud} Tipo:{TipoPokemon}) ")
+        print(f"{i + 1}. {pokemon.nombre} (Nivel: {pokemon.nivel}, Salud: {pokemon.puntos_salud} Tipo:{pokemon}) ")
 
 def main():
     print("Bienvenido a la aplicación de Pokémon")
@@ -45,7 +45,7 @@ def main():
 
         elif opcion == "3":
             nombre_pokemon = input("Ingrese el nombre del Pokémon a liberar: ")
-            pokemon_a_liberar = next((p for p in entrenador.Entrenador_lista_pokemones if p.nombre == nombre_pokemon), None)
+            pokemon_a_liberar = next((p for p in entrenador._Entrenador__lista_pokemones if p.nombre == nombre_pokemon), None)
             if pokemon_a_liberar:
                 entrenador.liberar_pokemon(pokemon_a_liberar)
                 print(f"Pokémon {nombre_pokemon} liberado!")
@@ -54,7 +54,7 @@ def main():
 
         elif opcion == "4":
             nombre_pokemon = input("Ingrese el nombre del Pokémon a evolucionar: ")
-            pokemon_a_evolucionar = next((p for p in entrenador.Entrenador_lista_pokemones if p.nombre == nombre_pokemon), None)
+            pokemon_a_evolucionar = next((p for p in entrenador._Entrenador__lista_pokemones if p.nombre == nombre_pokemon), None)
             if pokemon_a_evolucionar:
                 objeto = Objeto("Piedra Evolutiva")
                 mochila.add_objeto(objeto)
@@ -76,5 +76,6 @@ def main():
         else:
             print("Opción no válida. Intente de nuevo.")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
+    
