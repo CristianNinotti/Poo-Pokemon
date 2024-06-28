@@ -1,6 +1,6 @@
 import random
 
-class Pokemon:
+class PokemonSimulacion:
     def __init__(self, nombre, vida):
         self._nombre = nombre
         self._vida = vida
@@ -14,11 +14,11 @@ class Pokemon:
         return self._vida
 
     def atacar1(self):
-        cantidad = random.randint(10, 20)
+        cantidad = random.randint(10, 25)
         return cantidad
     
     def atacar2(self):
-        cantidad = random.randint(20, 30)
+        cantidad = random.randint(20, 35)
         return cantidad
 
     def perder_vida(self, ataque):
@@ -33,8 +33,8 @@ def pausa():
     
 
 def batalla():
-    pokemon1 = Pokemon("Charmander", 100)
-    pokemon2 = Pokemon("Pikachu", 100)
+    pokemon1 = PokemonSimulacion("Charmander", 100)
+    pokemon2 = PokemonSimulacion("Pikachu", 100)
 
     while pokemon1.vida > 0 and pokemon2.vida > 0:
         print("Vida de los Pokemones:\n")
@@ -88,4 +88,4 @@ def batalla():
 
     print("\n\nFIN DEL JUEGO")
 
-batalla()
+

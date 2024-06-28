@@ -1,9 +1,9 @@
 
 class TipoPokemon():
     def __init__(self, tipo:str, tipo_pokemon_debilidad:str, modificador:float) -> None:
-        self.__tipo = tipo
-        self.__tipo_pokemon_debilidad = tipo_pokemon_debilidad
-        self.__modificador = modificador
+        self.__tipo:str = tipo
+        self.__tipo_pokemon_debilidad:str = tipo_pokemon_debilidad
+        self.__modificador:float = modificador     
 
     ## Getter Tipo ##
     @property
@@ -37,7 +37,8 @@ class TipoPokemon():
 
     ## Str ##
     def __str__(self) -> str:
-        return f'''
-        Tipo: {self.tipo} 
-        Debilidad: {self.tipo_pokemon_debilidad}
-        Modificador: {self.modificador}'''                    
+        return f"""Tipo: {self.tipo}
+     Debilidad: {self.tipo_pokemon_debilidad}
+     Modificador: {self.modificador}"""
+    
+    

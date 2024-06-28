@@ -1,17 +1,18 @@
 class Objeto():
     def __init__(self, tipo:str) -> None:
-        self.__tipo = tipo
+        self.__tipo:str = tipo
 
+    ## Getter Tipo ##
     @property
-    def tipo(self)->str:
+    def tipo(self) -> str:
         return self.__tipo
 
+    ## Setter Tipo ##
     @tipo.setter
     def tipo(self,new_tipo):
         self.__tipo = new_tipo
 
-    def dar_objeto(self, objeto)->None:
-        return objeto
-
+    ## Str ##
     def __str__(self) -> str:
-        return f'Tipo objeto: {self.tipo}'       
+        return f'Tipo objeto: {self.tipo}'
+    

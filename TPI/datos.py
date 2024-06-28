@@ -3,6 +3,7 @@ from mochila import *
 from objeto import *
 from pokemon import *
 from tipopokemon import *
+import random
 
 ## Tipo(str) - Tipo-Pokemon-Debilidad(str) -Modificador(float)
 pokemonAgua = TipoPokemon('Agua', 'Hierba', 0.5)
@@ -23,26 +24,27 @@ pokemonNormal = TipoPokemon('Normal', 'Psiquico | Fantasma | Acero | Dragon | Ti
 
 
 ## Nombre(str) - Puntos de Salud(int) - Nivel(int) - Nivel minimo de evolucion(int)
-Squartle = Pokemon('Squartle', 50, 1, 16, pokemonAgua)
-Charmander = Pokemon('Charmander', 50, 1, 16, pokemonFuego)
-Bulbasaur = Pokemon('Bulbasaur', 50, 1, 16, pokemonHierba)
-Pikachu = Pokemon('Pikachu', 80, 1, 16, pokemonElectrico)
-Geodude = Pokemon('Geodude', 160, 17, 16, pokemonRoca)
-Caterpie = Pokemon('Caterpie', 90, 8, 7, pokemonBicho)
-Pidgey = Pokemon('Pidgey', 50, 5, 12, pokemonVolador)
-Jynx = Pokemon('Jynx',50, 20, 16, pokemonHielo)
-Cubone = Pokemon('Cubone', 120, 6, 16, pokemonTierra)
-Aerodactyl = Pokemon('Aerodactyl', 225, 25, 16, pokemonAcero)
-Dratini = Pokemon('Dratini', 100, 8, 16, pokemonDragon)
-Gastly = Pokemon('Gastly', 75, 3, 16, pokemonFantasma)
-Abra = Pokemon('Abra', 75, 3, 16, pokemonPsiquico)
-Mankey = Pokemon('Mankey', 210, 21, 16, pokemonLucha)
-Clefairy = Pokemon('Clefairy', 210, 21, 16, pokemonNormal)
+Squartle = Pokemon('Squartle', 50, random.randint(5,25), 16, pokemonAgua, "Wartortle")
+Charmander = Pokemon('Charmander', 50, random.randint(5,25), 16, pokemonFuego, "Charmeleon")
+Bulbasaur = Pokemon('Bulbasaur', 50, random.randint(5,25), 16, pokemonHierba, "Ivysaur")
+Pikachu = Pokemon('Pikachu', 80, random.randint(5,25), 16, pokemonElectrico, "Raichu")
+Geodude = Pokemon('Geodude', 160, random.randint(5,25), 16, pokemonRoca, "Graveler")
+Caterpie = Pokemon('Caterpie', 90, random.randint(3,10), 7, pokemonBicho, "Metapod")
+Pidgey = Pokemon('Pidgey', 50, random.randint(8,20), 12, pokemonVolador, "Pidgeotto")
+Jynx = Pokemon('Jynx',50, random.randint(5,25), 16, pokemonHielo, "MegaJynx")
+Cubone = Pokemon('Cubone', 120, random.randint(5,25), 16, pokemonTierra, "Marowak")
+Aerodactyl = Pokemon('Aerodactyl', 225, random.randint(5,25), 16, pokemonAcero, "MegaAerodactyl")
+Dratini = Pokemon('Dratini', 100,random.randint(5,25), 16, pokemonDragon, "Dragonair")
+Gastly = Pokemon('Gastly', 75, random.randint(5,25), 16, pokemonFantasma, "Haunter")
+Abra = Pokemon('Abra', 75, random.randint(5,25), 16, pokemonPsiquico, "Kadabra")
+Mankey = Pokemon('Mankey', 210, random.randint(5,25), 16, pokemonLucha, "Prime")
+Clefairy = Pokemon('Clefairy', 210, random.randint(5,25), 16, pokemonNormal, "Cleaffe")
+
+piedraEvolutiva = Objeto("Piedra Evolutiva")
+mochila = Mochila()
 
 lista_pokemones = [Squartle,Charmander,Bulbasaur,Pikachu,Geodude,Caterpie,Pidgey,Jynx,Cubone,Aerodactyl,Dratini,Gastly,Abra,Mankey,Clefairy]
 
-## for pokemon in lista_pokemones:
-##   print(pokemon) 
+lista_entrenadores = []
 
-
-
+pokemones_aleatorios=[]
