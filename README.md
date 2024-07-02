@@ -1,5 +1,7 @@
 <h1>Poo - Pokemon</h1>
-<h3>Tup 8 Turno Noche</h3>
+<h3>Comision Turno Año:Tup 8 Turno Noche - 2024 </h3>
+<h3>Materia: Programacion II </h3>
+
 <ul>
   <li>Diagrama - Uml</li>
   <li>Carpeta de clases</li>
@@ -17,9 +19,11 @@ También incluye una simulación de combate en la cual podrás enfrentarte a la 
 
 <h4>Miembros del grupo</h2>
 <ul>
-  <li>Gonzalez Nahuel</li>
-  <li>Poli Veliz Francisco</li>
-  <li>Zucco Juan Ignacio</li>
-  <li>Ninotti Cristian Elio</li>
+  <li>Gonzalez Nahuel Legajo: 53640</li>
+  <li>Poli Veliz Francisco Legajo: 53393</li>
+  <li>Zucco Juan Ignacio Legajo: 53524</li>
+  <li>Ninotti Cristian Elio Legajo: 53350</li>
 </ul>
+
+
 
