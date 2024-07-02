@@ -3,9 +3,12 @@
 <h3>Materia: Programacion II </h3>
 
 <ul>
-  <li>Diagrama - Uml</li>
-  <li>Carpeta de clases</li>
-  <li>Simulacion batalla</li>
+  <li>Diagrama - Uml (Formato original)</li>
+  <li>Diagrama - Uml Formato PDF </li>
+  <li>Carpeta de clases </li>
+  <li> App </li>
+  <li>Datos </li>
+  <li>Simulacion batalla </li>
 </ul>
 
 <h2>Descripcion del trabajo:</h2>
