@@ -26,4 +26,4 @@ También incluye una simulación de combate en la cual podrás enfrentarte a la 
 </ul>
 
 
-
+<h5>Link del repositorio: https://github.com/CristianNinotti/Poo-Pokemon</h5>
