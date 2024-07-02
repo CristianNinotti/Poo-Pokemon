@@ -1,5 +1,5 @@
 <h1>Poo - Pokemon</h1>
-<h3>Comision Turno Año:Tup 8 Turno Noche - 2024 </h3>
+<h3>Comision Turno Año: Tup 8 Turno Noche - 2024 </h3>
 <h3>Materia: Programacion II </h3>
 
 <ul>
